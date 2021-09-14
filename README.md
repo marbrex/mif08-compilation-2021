@@ -17,7 +17,7 @@ L'organisation de l'UE en « mode COVID » est la suivante :
 * Les groupes B et E sont parfois affectés à des salles de TD pour les TP. Venez avec votre ordinateur personnel pour ces séances.
 -->
 
-## Nouvelles du cours
+## Communication et nouvelles du cours
 
 * [NEWS.md](NEWS.md) contient les nouvelles du cours (envoyées par email également).
 <!-- 
@@ -26,7 +26,7 @@ L'organisation de l'UE en « mode COVID » est la suivante :
 * Tous les enseignements passent à distance pendant le mois de novembre (au moins) -->
 
 * Pour rejoindre les canaux de discussions sur chat-info, cliquez sur les liens suivants :
-    - [compil-2021](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2Fynpajp) pour les discussions générales sur le cours. Vous pouvez utiliser ce canal pour discuter entre vous et pour poser des questions aux enseignants. Nous ouvrirons plus de cannaux si nécessaire.
+    - [compil-2021](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2Fynpajp) pour les discussions générales sur le cours. Vous pouvez utiliser ce canal pour discuter entre vous et pour poser des questions aux enseignants. Nous ouvrirons plus de canaux si nécessaire. Merci d'utiliser le canal commun et non les messages directs ou le mail pour poser vos questions, comme ça tout le monde en profite.
 
 ## Intervenants
 
@@ -41,9 +41,7 @@ Toutes les vidéos sont disponibles dès maintenant :
 
 [La playlist Youtube MIF08](https://www.youtube.com/playlist?list=PLtjm-n_Ts-J9HSZ9ahpbsC_kTQMzUZQPx)
 
-Vous pouvez les regarder en avance si vous le souhaitez, et devez les regarder au plus tard pendant le créneau prévu dans votre emploi du temps.
-
-Vous pouvez utiliser le canal [compil-2021](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2Fynpajp) pour poser des questions au fur et à mesure que vous regardez les vidéos. 
+Le contenu des vidéos (réalisées en 2020) est sensiblement le même que celui des CM présentiels. Il est recommandé de venir en présentiel.
 
 ## Infrastructure technique, logiciels à installer
 
@@ -56,25 +54,38 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
 ## Mercredi 15/09/2021
 
 - :book: 14h: Cours 1: Introduction, machine cible (RISCV), lexing :
-    - Introduction du cours : [transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/mif_cours00_intro_cours.pdf)
-    - Introduction à la compilation et à l'architecture cible : [transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-21/capmif_cours01_intro_et_archi.pdf)
+    - Introduction au cours, à la compilation et à l'architecture cible : [transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/capmif_cours01_intro_et_archi.pdf)
+    - Lexing (et parsing) : [transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/capmif_cours02_lexing_parsing.pdf)
     - [Vidéo "teaser"](https://youtu.be/ny7HlqyuM9E)
     - [vidéo d'introduction au cours](https://www.youtube.com/watch?v=zGifE8MfPWA)
     - [vidéo sur RISCV](https://youtu.be/ZdElX9e_tAI)
     - [vidéo lexing](https://www.youtube.com/watch?v=UlUTSsOA9Qc)
-    - [Extrait de la documentation RISCV](https://compil-lyon.gitlabpages.inria.fr/mif08-20/RISCV-ISA-2020.pdf)
+    - Extrait de la documentation RISCV: [riscv_isa.pdf](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/riscv_isa.pdf)
     - chat sur [compil-2021](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2Fynpajp).
+    - :100: QCM noté sur TOMUSS, à faire avant dimanche 19/09, 23:59
 
-- :book: 15h45: Cours 2:
-Lexing, Parsing.
-    - [transparents parsing](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_cours02_lexing_parsing.pdf)
-    - [vidéo parsing](https://www.youtube.com/watch?v=y9MrfDzrAmA)
-    - [transparents sémantique et interprète](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_cours03_interpreters.pdf)
-    - [vidéo sémantique et interprète](https://youtu.be/8PYhBsgRO6g)
-    - chat sur [compil-2021](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2Fynpajp).
-    - Visio en direct à 16h45 sur [BBB (Compilation mif08)](https://classe-info.univ-lyon1.fr/moy-n6a-uip-gtj).
+- :pencil2: 16h30: TD1 : Architecture RISCV, Lexing, Parsing
+    - Salles :
+        - Groupe A : Nautibus TD1 (Matthieu Moy)
+        - Groupe B : Nautibus TD2 (Elise Jeanneau)
+        - Groupe C : Nautibus TD3 (Grégoire Pichon)
+        - Groupe D : Nautibus TD10 (Joris Picot)
+    - [Énoncé du TD1](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/td1.pdf)
+    - Rappel, extrait de la documentation RISCV : [riscv_isa.pdf](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/riscv_isa.pdf)
+    - Lexing et parsing avec ANTLR en 2 slides : [td1-slides.pdf](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/td1-slides.pdf)
 
-- :100: QCM noté sur TOMUSS, à faire avant 23:59 le jour même (7/10)
+- :hammer: TP1
+    - Salles :
+        - Groupe A1 : Nautibus TP10 (Matthieu Moy)
+        - Groupe A2 : Nautibus TP11 (Guillaume Bouchard)
+        - Groupe B1 : Nautibus TP5 (Elise Jeanneau)
+        - Groupe B2 : Nautibus TP6 (Gabriel Radanne)
+        - Groupe C1 : Nautibus TP1 (Gregoire Pichon)
+        - Groupe C2 : Nautibus TP2 (Nicolas Louvet)
+        - Groupe D1 : Nautibus TP12 (Joris Picot)
+        - Groupe D2 : Nautibus TP13 (Hugo Thievenaz)
+    - Énoncé : [TP1 python/archi](https://compil-lyon.gitlabpages.inria.fr/mif08-20/tp1.pdf)
+    - Fichiers du TP1 : [TP01/](TP01/).
 
 # BROUILLON DE PLANNING
 
@@ -212,42 +223,19 @@ Lexing, Parsing.
 
 ## Mercredi 14/10/2020
 
-- :pencil2: 16h30: TD1 : Architecture RISCV, Lexing, Parsing
 
-    Votre salle est affichée sur TOMUSS, les bleus et quelques jaunes sont à distance.
-    - En présentiel :
-        - Nautibus TD1 (20 places) : Matthieu Moy.
-        - Nautibus TD5 (24 places) : Guillaume Bouchard
-        - Nautibus TD10 (24 places) : Élise Jeanneau
-    - À distance :
-        - groupe 1 : [compil-groupe-1](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FEqiqPF) sur chat-info, Grégoire Pichon.
-        - groupe 2 : [compil-groupe-2](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2F3Qzt5k) sur chat-info, ~~Laure Gonnord~~ Joris Picot
-    - [Énoncé du TD1](https://compil-lyon.gitlabpages.inria.fr/mif08-20/td1.pdf)
-    - Rappel : [Extrait de la documentation RISCV](https://compil-lyon.gitlabpages.inria.fr/mif08-20/RISCV-ISA-2020.pdf)
-    - Lexing et parsing avec ANTLR en 2 slides : [slides-td1.pdf](https://compil-lyon.gitlabpages.inria.fr/mif08-20/td1-slides.pdf)
+- :book: 15h45: Cours 2:
+Lexing, Parsing.
+    - Parsing : [deuxième partie des transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_cours02_lexing_parsing.pdf)
+    - [vidéo parsing](https://www.youtube.com/watch?v=y9MrfDzrAmA)
+    - [transparents sémantique et interprète](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_cours03_interpreters.pdf)
+    - [vidéo sémantique et interprète](https://youtu.be/8PYhBsgRO6g)
+    - chat sur [compil-2021](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2Fynpajp).
+    - Visio en direct à 16h45 sur [BBB (Compilation mif08)](https://classe-info.univ-lyon1.fr/moy-n6a-uip-gtj).
+
+- :100: QCM noté sur TOMUSS, à faire avant 23:59 le jour même (7/10)
 
 ## Jeudi 15/10/2020
-
-- :hammer: TP1,
-    <!-- - Nautibus TP1 (10 places) :  -->
-    Votre salle est affichée sur TOMUSS. Les bleus sont à distance, les jaunes en présentiel. Pour les quelques jaunes qui sont en distanciel sur le créneau suivant, vous pouvez aussi faire le TP en distanciel bien sûr.
-    - En présentiel :
-        - Nautibus TP9  (9 places)  : A1, Laure Gonnord
-        - Nautibus TP10 (10 places) : A2, Laure Gonnord
-        - Nautibus TP11 (9 places)  : C1, Guillaume Bouchard
-        - Nautibus TP12 (9 places)  : C2, Guillaume Bouchard
-        - Nautibus TP13 (10 places) : D1, Élise Jeanneau
-        - Nautibus TP14 (10 places) : D2, Élise Jeanneau
-        - Nautibus TD10 (24 places) : Groupe E, Grégoire Pichon
-        - Nautibus TD12 (23 places) : Groupe B (repli possible en TP1 si des étudiants n'ont pas de machine), Matthieu Moy
-    - À distance : 
-        - Groupe A : [compil-groupe-a](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FtHfE7j) ~~Laure Gonnord~~ Joris Picot
-        - Groupe B : [compil-groupe-b](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FqHW2MX) Nicolas Louvet
-        - Groupe C : [compil-groupe-c](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FsuFXKk) Thierry Excoffier
-        - Groupe D : [compil-groupe-d](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FkAWmMd) Lionel Morel
-        - Groude E : [compil-groupe-e](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FcnEQ9c) Guillaume Salagnac
-    - Énoncé : [TP1 python/archi](https://compil-lyon.gitlabpages.inria.fr/mif08-20/tp1.pdf)
-    - Fichiers du TP1 : [TP01/](TP01/).
 
 - :pencil2: 15h45: TD, Arbres abstraits, attributions, types
 
