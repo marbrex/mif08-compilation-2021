@@ -6,16 +6,11 @@ We prepared a few VM in case you have trouble with your personal machines. They 
 
 We prepared 10 VMs for you. To balance the load between VMs, please use the VM corresponding to your group:
 
-* Group A1 : 192.168.78.10
-* Group A2 : 192.168.78.12
-* Group B1 : 192.168.78.13
-* Group B2 : 192.168.78.14
-* Group C1 : 192.168.78.16
-* Group C2 : 192.168.78.19
-* Group D1 : 192.168.78.22
-* Group D2 : 192.168.78.24
-* Group E1 : 192.168.78.26
-* Group E2 : 192.168.78.27
+* Group A : 192.168.152.20
+* Group B : 192.168.152.190
+* Group C : 192.168.153.220
+* Group D : 192.168.153.211
+* If yours doesn't work, use : 192.168.153.35
 
 In the explanations below, please replace IP_VM with the IP of your VM.
 

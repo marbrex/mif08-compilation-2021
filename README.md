@@ -30,12 +30,10 @@ L'organisation de l'UE en « mode COVID » est la suivante :
 
 ## Intervenants
 
-
-* Groupe A : Matthieu Moy (+ Lionel Morel pour les TPs)
-* Groupe B : Elise Jeanneau (+ Thierry Excoffier pour les TPs)
+* Groupe A : Matthieu Moy (+ Guillaume Bouchard pour les TPs)
+* Groupe B : Elise Jeanneau (+ Gabriel Radanne pour les TPs)
 * Groupe C : Gregoire Pichon (+ Nicolas Louvet pour les TPs)
 * Groupe D : Joris Picot (+ Hugo Thievenaz pour les TPs)
-* Groupe E : Guillaume Bouchard (+ Gabriel Radanne pour les TPs)
 
 ## Vidéos des CM
 
@@ -46,12 +44,41 @@ Toutes les vidéos sont disponibles dès maintenant :
 Vous pouvez les regarder en avance si vous le souhaitez, et devez les regarder au plus tard pendant le créneau prévu dans votre emploi du temps.
 
 Vous pouvez utiliser le canal [compil-2021](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2Fynpajp) pour poser des questions au fur et à mesure que vous regardez les vidéos. 
-<!-- Une visio en direct aura lieu en fin de chaque créneau de CM sur [BBB (Compilation mif08)](https://classe-info.univ-lyon1.fr/moy-n6a-uip-gtj). -->
+
+## Infrastructure technique, logiciels à installer
+
+Les TP utilisent la chaîne d'outils RiscV, un peu lourde à installer. Voir [INSTALL.md](INSTALL.md) pour les consignes. À faire avant les TPs si vous voulez travailler sur vos machines personnelles.
+
+Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez travailler sur les ordinateurs de la fac, et nous fournissons aussi des machines virtuelles pré-installées : [VM.md](VM.md).
+
+## Planning
+
+## Mercredi 15/09/2021
+
+- :book: 14h: Cours 1: Introduction, machine cible (RISCV), lexing :
+    - Introduction du cours : [transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/mif_cours00_intro_cours.pdf)
+    - Introduction à la compilation et à l'architecture cible : [transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-21/capmif_cours01_intro_et_archi.pdf)
+    - [Vidéo "teaser"](https://youtu.be/ny7HlqyuM9E)
+    - [vidéo d'introduction au cours](https://www.youtube.com/watch?v=zGifE8MfPWA)
+    - [vidéo sur RISCV](https://youtu.be/ZdElX9e_tAI)
+    - [vidéo lexing](https://www.youtube.com/watch?v=UlUTSsOA9Qc)
+    - [Extrait de la documentation RISCV](https://compil-lyon.gitlabpages.inria.fr/mif08-20/RISCV-ISA-2020.pdf)
+    - chat sur [compil-2021](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2Fynpajp).
+
+- :book: 15h45: Cours 2:
+Lexing, Parsing.
+    - [transparents parsing](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_cours02_lexing_parsing.pdf)
+    - [vidéo parsing](https://www.youtube.com/watch?v=y9MrfDzrAmA)
+    - [transparents sémantique et interprète](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_cours03_interpreters.pdf)
+    - [vidéo sémantique et interprète](https://youtu.be/8PYhBsgRO6g)
+    - chat sur [compil-2021](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2Fynpajp).
+    - Visio en direct à 16h45 sur [BBB (Compilation mif08)](https://classe-info.univ-lyon1.fr/moy-n6a-uip-gtj).
+
+- :100: QCM noté sur TOMUSS, à faire avant 23:59 le jour même (7/10)
 
 # BROUILLON DE PLANNING
 
 ```
-
 15/09/2021:
   14:00 -> 15:30 : CM 1 (CM, Matthieu Moy : Introduction, RISCV, lexing)
   15:45 -> 17:15 : TD 1 (A, Matthieu Moy : Architecture)
@@ -182,29 +209,6 @@ Vous pouvez utiliser le canal [compil-2021](https://go.rocket.chat/invite?host=c
 ```
 
 # CI-DESSOUS, LE PLANNING DE L'ANNEE DERNIERE QUI SERA MIS À JOUR AU FUR ET À MESURE
-
-## Mercredi 7/10/2020
-
-- :book: 14h: Cours 1: Introduction, machine cible (RISCV), lexing :
-    - [transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_cours01_intro_et_archi.pdf)
-    - [Vidéo "teaser"](https://youtu.be/ny7HlqyuM9E)
-    - [vidéo d'introduction au cours](https://www.youtube.com/watch?v=zGifE8MfPWA)
-    - [vidéo sur RISCV](https://youtu.be/ZdElX9e_tAI)
-    - [vidéo lexing](https://www.youtube.com/watch?v=UlUTSsOA9Qc)
-    - [Extrait de la documentation RISCV](https://compil-lyon.gitlabpages.inria.fr/mif08-20/RISCV-ISA-2020.pdf)
-    - chat sur [compil-2021](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2Fynpajp).
-    - Visio en direct à 15h sur [BBB (Compilation mif08)](https://classe-info.univ-lyon1.fr/moy-n6a-uip-gtj).
-
-- :book: 15h45: Cours 2:
-Lexing, Parsing.
-    - [transparents parsing](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_cours02_lexing_parsing.pdf)
-    - [vidéo parsing](https://www.youtube.com/watch?v=y9MrfDzrAmA)
-    - [transparents sémantique et interprète](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_cours03_interpreters.pdf)
-    - [vidéo sémantique et interprète](https://youtu.be/8PYhBsgRO6g)
-    - chat sur [compil-2021](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2Fynpajp).
-    - Visio en direct à 16h45 sur [BBB (Compilation mif08)](https://classe-info.univ-lyon1.fr/moy-n6a-uip-gtj).
-
-- :100: QCM noté sur TOMUSS, à faire avant 23:59 le jour même (7/10)
 
 ## Mercredi 14/10/2020
 
