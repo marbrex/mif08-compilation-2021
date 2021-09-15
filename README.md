@@ -62,7 +62,7 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
     - [vidéo lexing](https://www.youtube.com/watch?v=UlUTSsOA9Qc)
     - Extrait de la documentation RISCV: [riscv_isa.pdf](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/riscv_isa.pdf)
     - chat sur [compil-2021](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2Fynpajp).
-    - :100: QCM noté sur TOMUSS, à faire avant dimanche 19/09, 23:59
+    - :100: QCM noté sur TOMUSS, à faire avant dimanche 19/09/2021, 23:59
 
 - :pencil2: 16h30: TD1 : Architecture RISCV, Lexing, Parsing
     - Salles :
@@ -90,24 +90,6 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
 # BROUILLON DE PLANNING
 
 ```
-15/09/2021:
-  14:00 -> 15:30 : CM 1 (CM, Matthieu Moy : Introduction, RISCV, lexing)
-  15:45 -> 17:15 : TD 1 (A, Matthieu Moy : Architecture)
-  15:45 -> 17:15 : TD 1 (B, Elise Jeanneau : Architecture)
-  15:45 -> 17:15 : TD 1 (C, Gregoire Pichon : Architecture)
-  15:45 -> 17:15 : TD 1 (D, Joris Picot : Architecture)
-  15:45 -> 17:15 : TD 1 (E, Guillaume Bouchard : Architecture)
-  17:30 -> 19:00 : TP 1 (A1, Matthieu Moy : Python)
-  17:30 -> 19:00 : TP 1 (B2, Thierry Excoffier : Python)
-  17:30 -> 19:00 : TP 1 (B1, Elise Jeanneau : Python)
-  17:30 -> 19:00 : TP 1 (C2, Nicolas Louvet : Python)
-  17:30 -> 19:00 : TP 1 (C1, Gregoire Pichon : Python)
-  17:30 -> 19:00 : TP 1 (D2, Joris Picot : Python)
-  17:30 -> 19:00 : TP 1 (D1, Hugo Thievenaz : Python)
-  17:30 -> 19:00 : TP 1 (E2, Gabriel Radanne : Python)
-  17:30 -> 19:00 : TP 1 (E1, Guillaume Bouchard : Python)
-  17:30 -> 19:00 : TP 1 (A2, Lionel Morel : Python)
-
 06/10/2021:
   08:00 -> 09:30 : CM 2 (CM, Matthieu Moy : Parsing, semantics)
   09:45 -> 11:15 : TD 2 (A, Matthieu Moy : AST, Grammar)
