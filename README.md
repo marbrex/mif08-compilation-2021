@@ -84,7 +84,7 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
         - Groupe C2 : Nautibus TP2 (Nicolas Louvet)
         - Groupe D1 : Nautibus TP12 (Joris Picot)
         - Groupe D2 : Nautibus TP13 (Hugo Thievenaz)
-    - Énoncé : [TP1 python/archi](https://compil-lyon.gitlabpages.inria.fr/mif08-20/tp1.pdf)
+    - Énoncé : [TP1 python/archi](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/tp1.pdf)
     - Fichiers du TP1 : [TP01/](TP01/).
 
 # BROUILLON DE PLANNING
