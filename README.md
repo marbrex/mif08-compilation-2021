@@ -64,7 +64,7 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
     - chat sur [compil-2021](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2Fynpajp).
     - :100: QCM noté sur TOMUSS, à faire avant dimanche 19/09/2021, 23:59
 
-- :pencil2: 16h30: TD1 : Architecture RISCV, Lexing, Parsing
+- :pencil2: 15h45: TD1 : Architecture RISCV, Lexing, Parsing
     - Salles :
         - Groupe A : Nautibus TD1 (Matthieu Moy)
         - Groupe B : Nautibus TD2 (Elise Jeanneau)
@@ -74,7 +74,7 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
     - Rappel, extrait de la documentation RISCV : [riscv_isa.pdf](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/riscv_isa.pdf)
     - Lexing et parsing avec ANTLR en 2 slides : [td1-slides.pdf](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/td1-slides.pdf)
 
-- :hammer: TP1
+- :hammer: 17h30: TP1 : Python et RiscV
     - Salles :
         - Groupe A1 : Nautibus TP10 (Matthieu Moy)
         - Groupe A2 : Nautibus TP11 (Guillaume Bouchard)
