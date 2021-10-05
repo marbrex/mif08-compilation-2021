@@ -94,7 +94,7 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
     - [transparents sémantique et interprète](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/capmif_cours03_interpreters.pdf)
     - [vidéo sémantique et interprète](https://youtu.be/8PYhBsgRO6g)
 
-- :100: QCM noté sur TOMUSS, à faire avant dimanche 9/10, 23:59.
+- :100: QCM noté sur TOMUSS, à faire avant dimanche 9/10/2021, 23:59.
 
 - :pencil2: 9h45: TD, Arbres abstraits, attributions, types
     - Salles :
@@ -119,6 +119,17 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
     - Énoncé : [TP2 antlr](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/tp2.pdf)
     - Fichiers du TP2 : [TP02/](TP02/).
     - **Date limite pour le rendu (noté) : mardi 12/10/2021, 23h59.**
+
+
+## Pondération des notes (indicative pour l'instant sauf l'examen final qui sera forcément 50%)
+  - QCM : 10% (2% chacun)
+  - TP2 parsing et évaluation d'expression : 5%
+  - TP3 interprète : 10%
+  - TP4 génération de code : 12.5%
+  - TP5 allocation de registres : 12.5%
+  - Examen final : 50 %
+
+La session 2 remplace la note d'examen final.
 
 # BROUILLON DE PLANNING
 
@@ -343,13 +354,3 @@ correction partielle sera fournie à la même heure.
 * Examen de session 1 :
     - Pour les étudiants bénéficiant d'un tiers-temps : 8h-10h, salle Nautibus C2.
     - Pour les étudiants ne bénéficiant pas de tiers-temps : 8h15-9h45, Amphis Déambu (place exacte sur TOMUSS)
-
-## Pondération des notes (indicative pour l'instant)
-  - QCM : 15% (3% chacun)
-  - TP2 parsing et évaluation d'expression : 5%
-  - TP3 interprète : 10%
-  - TP4 génération de code : 10%
-  - TP5 allocation de registres : 10%
-  - Examen final : 50 %
-
-La session 2 remplace la note d'examen final.
