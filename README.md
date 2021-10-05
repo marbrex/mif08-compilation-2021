@@ -104,27 +104,25 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
         - Groupe D : Nautibus TD 10
     - [Énoncé du TD2](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/td2.pdf)
 
+- :hammer: 14h-17h15: TP2, ANTLR
+    - Salles :
+        - Groupe A1 : Nautibus TP10
+        - Groupe A2 : Nautibus TP11
+        - Groupe B1 : Nautibus TP5
+        - Groupe B2 : Nautibus TP6
+        - Groupe C1 : Nautibus TP1
+        - Groupe C2 : Nautibus TP2
+        - Groupe D1 : Nautibus TP13
+        - Groupe D2 : Nautibus TP12
+    - Transparents de présentation : [capmif_labs.pdf](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/capmif_labs.pdf)
+    - Si besoin : des VM pour vous dépanner en cas de problème sur machine perso : [VM.md](VM.md)
+    - Énoncé : [TP2 antlr](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/tp2.pdf)
+    - Fichiers du TP2 : [TP02/](TP02/).
+    - **Date limite pour le rendu (noté) : mardi 12/10/2021, 23h59.**
+
 # BROUILLON DE PLANNING
 
 ```
-06/10/2021:
-  08:00 -> 09:30 : CM 2 (CM, Matthieu Moy : Parsing, semantics)
-  09:45 -> 11:15 : TD 2 (A, Matthieu Moy : AST, Grammar)
-  09:45 -> 11:15 : TD 2 (B, Elise Jeanneau : AST, Grammar)
-  09:45 -> 11:15 : TD 2 (C, Gregoire Pichon : AST, Grammar)
-  09:45 -> 11:15 : TD 2 (D, Joris Picot : AST, Grammar)
-  09:45 -> 11:15 : TD 2 (E, Guillaume Bouchard : AST, Grammar)
-  14:00 -> 17:15 : TP 2 (A1, Matthieu Moy : ANTLR (parsing, semantic actions))
-  14:00 -> 17:15 : TP 2 (B2, Thierry Excoffier : ANTLR (parsing, semantic actions))
-  14:00 -> 17:15 : TP 2 (B1, Elise Jeanneau : ANTLR (parsing, semantic actions))
-  14:00 -> 17:15 : TP 2 (C2, Nicolas Louvet : ANTLR (parsing, semantic actions))
-  14:00 -> 17:15 : TP 2 (C1, Gregoire Pichon : ANTLR (parsing, semantic actions))
-  14:00 -> 17:15 : TP 2 (D2, Joris Picot : ANTLR (parsing, semantic actions))
-  14:00 -> 17:15 : TP 2 (D1, Hugo Thievenaz : ANTLR (parsing, semantic actions))
-  14:00 -> 17:15 : TP 2 (E2, Gabriel Radanne : ANTLR (parsing, semantic actions))
-  14:00 -> 17:15 : TP 2 (E1, Guillaume Bouchard : ANTLR (parsing, semantic actions))
-  14:00 -> 17:15 : TP 2 (A2, Lionel Morel : ANTLR (parsing, semantic actions))
-
 13/10/2021:
   14:00 -> 15:30 : CM 3 (CM, Matthieu Moy : Typing)
   15:45 -> 17:15 : TP 3 (début) (A1, Matthieu Moy : Interpreter)
@@ -219,23 +217,6 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
 ```
 
 # CI-DESSOUS, LE PLANNING DE L'ANNEE DERNIERE QUI SERA MIS À JOUR AU FUR ET À MESURE
-
-## Jeudi 15/10/2020
-
-## Mercredi 04/11/2020
-
-- :hammer: TP2, ANTLR : 14h-17h15,
-    - 100% distanciel :
-        - Groupe A : [compil-groupe-a](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FtHfE7j) Laure Gonnord et Joris Picot
-        - Groupe B : [compil-groupe-b](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FqHW2MX) Nicolas Louvet et Matthieu Moy
-        - Groupe C : [compil-groupe-c](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FsuFXKk) Thierry Excoffier et Guillaume Bouchard
-        - Groupe D : [compil-groupe-d](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FkAWmMd) Lionel Morel et Élise Jeanneau
-        - Groupe E : [compil-groupe-e](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FcnEQ9c) Guillaume Salagnac et Grégoire Pichon
-    - Transparents de présentation : [capmif_labs.pdf](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_labs.pdf)
-    - Nouveauté : des VM pour vous dépanner en cas de problème sur machine perso : [VM.md](VM.md)
-    - Énoncé : [TP2 antlr](https://compil-lyon.gitlabpages.inria.fr/mif08-20/tp2.pdf)
-    - Fichiers du TP2 : [TP02/](TP02/).
-    - **Date limite pour le rendu (noté) : dimanche 8/11/2020, 23h59.**
 
 - :book: Cours 3, Typage : 17h30-19h
     - [transparents typage](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_cours04_typing.pdf)
