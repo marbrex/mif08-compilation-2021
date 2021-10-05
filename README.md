@@ -55,7 +55,7 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
 
 - :book: 14h: Cours 1: Introduction, machine cible (RISCV), lexing :
     - Introduction au cours, à la compilation et à l'architecture cible : [transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/capmif_cours01_intro_et_archi.pdf)
-    - Lexing (et parsing) : [transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/capmif_cours02_lexing_parsing.pdf)
+    - Lexing (et parsing) : [transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/capmif_cours02_lexing_parsing.pdf) <!-- TODO: passer parsing sur CM 1, sinon il manque un bout pour le TD. -->
     - [Vidéo "teaser"](https://youtu.be/ny7HlqyuM9E)
     - [vidéo d'introduction au cours](https://www.youtube.com/watch?v=zGifE8MfPWA)
     - [vidéo sur RISCV](https://youtu.be/ZdElX9e_tAI)
@@ -86,6 +86,23 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
         - Groupe D2 : Nautibus TP13 (Hugo Thievenaz)
     - Énoncé : [TP1 python/archi](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/tp1.pdf)
     - Fichiers du TP1 : [TP01/](TP01/).
+## Mercredi 6/10/2021
+
+- :book: 8h: Cours 2: Lexing, Parsing, interprétation
+    - Parsing : [deuxième partie des transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/capmif_cours02_lexing_parsing.pdf)
+    - [vidéo parsing](https://www.youtube.com/watch?v=y9MrfDzrAmA)
+    - [transparents sémantique et interprète](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/capmif_cours03_interpreters.pdf)
+    - [vidéo sémantique et interprète](https://youtu.be/8PYhBsgRO6g)
+
+- :100: QCM noté sur TOMUSS, à faire avant dimanche 9/10, 23:59.
+
+- :pencil2: 9h45: TD, Arbres abstraits, attributions, types
+    - Salles :
+        - Groupe A : Nautibus TD 1
+        - Groupe B : Nautibus TD 2
+        - Groupe C : Nautibus TD 3
+        - Groupe D : Nautibus TD 10
+    - [Énoncé du TD2](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/td2.pdf)
 
 # BROUILLON DE PLANNING
 
@@ -203,33 +220,7 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
 
 # CI-DESSOUS, LE PLANNING DE L'ANNEE DERNIERE QUI SERA MIS À JOUR AU FUR ET À MESURE
 
-## Mercredi 14/10/2020
-
-
-- :book: 15h45: Cours 2:
-Lexing, Parsing.
-    - Parsing : [deuxième partie des transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_cours02_lexing_parsing.pdf)
-    - [vidéo parsing](https://www.youtube.com/watch?v=y9MrfDzrAmA)
-    - [transparents sémantique et interprète](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_cours03_interpreters.pdf)
-    - [vidéo sémantique et interprète](https://youtu.be/8PYhBsgRO6g)
-    - chat sur [compil-2021](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2Fynpajp).
-    - Visio en direct à 16h45 sur [BBB (Compilation mif08)](https://classe-info.univ-lyon1.fr/moy-n6a-uip-gtj).
-
-- :100: QCM noté sur TOMUSS, à faire avant 23:59 le jour même (7/10)
-
 ## Jeudi 15/10/2020
-
-- :pencil2: 15h45: TD, Arbres abstraits, attributions, types
-
-    Votre salle est affichée sur TOMUSS. Les bleus sont à distance et quelques jaunes sont à distance, les autres en présentiel.
-    - En présentiel :
-        - Nautibus TD10 (24 places) : Matthieu Moy
-        - Nautibus TD11 (20 places) : Guillaume Bouchard
-        - Nautibus TD1 (20 places) : Élise Jeanneau
-    - À distance :
-        - groupe 1 : [compil-groupe-1](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FEqiqPF) sur chat-info, Grégoire Pichon.
-        - groupe 2 : [compil-groupe-2](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2F3Qzt5k) sur chat-info, ~~Laure Gonnord~~ Joris Picot
-    - [Énoncé du TD2](https://compil-lyon.gitlabpages.inria.fr/mif08-20/td2.pdf)
 
 ## Mercredi 04/11/2020
 
