@@ -1,6 +1,9 @@
 # LAB2, arithmetic expressions interpreter
 MIF08, 2020-2021, Laure Gonnord & Matthieu Moy
 
+# Completed by
+Eldar Kasmamytov p1712650
+
 # Content
 
 This directory contains an interpreter for simple arithmetic
@@ -25,7 +28,9 @@ Restriction : we did not implement minus nor unary minus.
 
 # Design choices
 
-TODO
+- Implemented **equally prioritized** Minus and Plus rules
+- Unary Minus is ordered **at the top of the list as the most prioritized rule**
+- Wrote **multiple tests** for the above mentioned rules.
 
 # Known bugs
 
