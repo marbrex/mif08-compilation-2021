@@ -31,7 +31,8 @@ Restriction : we did not implement minus nor unary minus.
 - Implemented **equally prioritized** Minus and Plus rules
 - Unary Minus is ordered **at the top of the list as the most prioritized rule**
 - Wrote **multiple tests** for the above mentioned rules.
+- Added **Integer Division**, that has the **same priority order as the Mult. operator**
 
 # Known bugs
 
-N/A
+- division by zero is accepted by the parser (pre-condition, it's up to the user to not divide by zero) and is handled by python, which throws an exception as the division by zero is impossible. No test, because there is no an expected value.
