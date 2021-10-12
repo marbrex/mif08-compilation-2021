@@ -121,17 +121,6 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
     - Fichiers du TP2 : [TP02/](TP02/).
     - **Date limite pour le rendu (noté) : mardi 12/10/2021, 23h59.**
 
-
-## Pondération des notes (indicative pour l'instant sauf l'examen final qui sera forcément 50%)
-  - QCM : 10% (2% chacun)
-  - TP2 parsing et évaluation d'expression : 5%
-  - TP3 interprète : 10%
-  - TP4 génération de code : 12.5%
-  - TP5 allocation de registres : 12.5%
-  - Examen final : 50 %
-
-La session 2 remplace la note d'examen final.
-
 ## Mercredi 13/10/2020
 
 - :book: Cours 3, Typage : 14h-15h30
@@ -152,6 +141,16 @@ La session 2 remplace la note d'examen final.
     - Énoncé : [TP3 frontend, évaluateur](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/tp3.pdf)
     - Fichiers du TP3 : [TP03/](TP03/) puis [MiniC/](MiniC/).
     - **Date limite de rendu du TP3 : dimanche 7 novembre 2021, 23h59 (vous aurez une séance d'1h30 pour finir le TP le 3/11/2021).**
+
+## Pondération des notes (indicative pour l'instant sauf l'examen final qui sera forcément 50%)
+  - QCM : 10% (2% chacun)
+  - TP2 parsing et évaluation d'expression : 5%
+  - TP3 interprète : 10%
+  - TP4 génération de code : 12.5%
+  - TP5 allocation de registres : 12.5%
+  - Examen final : 50 %
+
+La session 2 remplace la note d'examen final.
 
 # BROUILLON DE PLANNING
 
@@ -237,7 +236,7 @@ Deadline TP4 juste avant les vacances de noel
   14:00 -> 15:30 : TP 5 (fin) (E1, Guillaume Bouchard : Smart register allocation)
   14:00 -> 15:30 : TP 5 (fin) (A2, Lionel Morel : Smart register allocation)
 
-Deadline TP5 en fin de semestre
+Deadline TP5 mercredi 12/1 soir pour éviter les clashs avec les deadlines mif03 (7, 10, 11, 13, 14 janvier selon les groupes).
 ```
 
 # CI-DESSOUS, LE PLANNING DE L'ANNEE DERNIERE QUI SERA MIS À JOUR AU FUR ET À MESURE
