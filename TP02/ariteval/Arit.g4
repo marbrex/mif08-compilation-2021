@@ -11,7 +11,7 @@ statement: expr SCOL    {print($expr.text+" = "+str($expr.val))} // print the va
 
 expr returns [int val]
     : MINUS e=expr {$val = - $e.val} // unary MINUS
-    | e1=expr MULT  e2=expr {$val = $e1.val * $e2.val} // MULT is * (matched before PLUS if possible)
+    | e1=expr op=(MULT|DIV)  e2=expr {$val = $e1.val * $e2.val if $op.text == '*' else int($e1.val / $e2.val)} // MULT is * (matched before PLUS if possible)
     | e1=expr op=(PLUS|MINUS)  e2=expr {$val = $e1.val + $e2.val if $op.text == '+' else $e1.val - $e2.val} // PLUS is +
     | a=atom {$val = $a.val} // just copy the value
     ;
