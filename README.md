@@ -86,6 +86,7 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
         - Groupe D2 : Nautibus TP13 (Hugo Thievenaz)
     - Énoncé : [TP1 python/archi](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/tp1.pdf)
     - Fichiers du TP1 : [TP01/](TP01/).
+
 ## Mercredi 6/10/2021
 
 - :book: 8h: Cours 2: Lexing, Parsing, interprétation
@@ -94,7 +95,7 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
     - [transparents sémantique et interprète](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/capmif_cours03_interpreters.pdf)
     - [vidéo sémantique et interprète](https://youtu.be/8PYhBsgRO6g)
 
-- :100: QCM noté sur TOMUSS, à faire avant dimanche 9/10/2021, 23:59.
+- :100: QCM noté sur TOMUSS, à faire avant lundi 11/10/2021, 23:59.
 
 - :pencil2: 9h45: TD, Arbres abstraits, attributions, types
     - Salles :
@@ -120,6 +121,26 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
     - Fichiers du TP2 : [TP02/](TP02/).
     - **Date limite pour le rendu (noté) : mardi 12/10/2021, 23h59.**
 
+## Mercredi 13/10/2020
+
+- :book: Cours 3, Typage : 14h-15h30
+    - [transparents typage](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/capmif_cours04_typing.pdf)
+    - [vidéo typage](https://youtu.be/2A-hQy_6YlE)
+- :100: QCM noté sur TOMUSS, à faire avant dimanche 17/10/2021, 23:59
+
+- :hammer: TP3, interprète MiniC : 15h45-17h15
+    - Salles :
+        - Groupe A1 : Nautibus TP10
+        - Groupe A2 : Nautibus TP11
+        - Groupe B1 : Nautibus TP5
+        - Groupe B2 : Nautibus TP6
+        - Groupe C1 : Nautibus TP9 (Attention, bug de groupe sur ADE)
+        - Groupe C2 : Nautibus TP14 (Attention, bug de groupe sur ADE)
+        - Groupe D1 : Nautibus TP13
+        - Groupe D2 : Nautibus TP12
+    - Énoncé : [TP3 frontend, évaluateur](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/tp3.pdf)
+    - Fichiers du TP3 : [TP03/](TP03/) puis [MiniC/](MiniC/).
+    - **Date limite de rendu du TP3 : dimanche 7 novembre 2021, 23h59 (vous aurez une séance d'1h30 pour finir le TP le 3/11/2021).**
 
 ## Pondération des notes (indicative pour l'instant sauf l'examen final qui sera forcément 50%)
   - QCM : 10% (2% chacun)
@@ -134,19 +155,6 @@ La session 2 remplace la note d'examen final.
 # BROUILLON DE PLANNING
 
 ```
-13/10/2021:
-  14:00 -> 15:30 : CM 3 (CM, Matthieu Moy : Typing)
-  15:45 -> 17:15 : TP 3 (début) (A1, Matthieu Moy : Interpreter)
-  15:45 -> 17:15 : TP 3 (début) (B2, Thierry Excoffier : Interpreter)
-  15:45 -> 17:15 : TP 3 (début) (B1, Elise Jeanneau : Interpreter)
-  15:45 -> 17:15 : TP 3 (début) (C2, Nicolas Louvet : Interpreter)
-  15:45 -> 17:15 : TP 3 (début) (C1, Gregoire Pichon : Interpreter)
-  15:45 -> 17:15 : TP 3 (début) (D2, Joris Picot : Interpreter)
-  15:45 -> 17:15 : TP 3 (début) (D1, Hugo Thievenaz : Interpreter)
-  15:45 -> 17:15 : TP 3 (début) (E2, Gabriel Radanne : Interpreter)
-  15:45 -> 17:15 : TP 3 (début) (E1, Guillaume Bouchard : Interpreter)
-  15:45 -> 17:15 : TP 3 (début) (A2, Lionel Morel : Interpreter)
-
 03/11/2021:
   14:00 -> 15:30 : TP 3 (fin) (A1, Matthieu Moy : Interpreter)
   14:00 -> 15:30 : TP 3 (fin) (B2, Thierry Excoffier : Interpreter)
@@ -197,6 +205,8 @@ La session 2 remplace la note d'examen final.
   15:45 -> 17:15 : TD 4 (D, Joris Picot : Liveness analysis)
   15:45 -> 17:15 : TD 4 (E, Guillaume Bouchard : Liveness analysis)
 
+Deadline TP4 juste avant les vacances de noel
+
 05/01/2022:
   14:00 -> 15:30 : TD 5 (A, Matthieu Moy : Register allocation)
   14:00 -> 15:30 : TD 5 (B, Elise Jeanneau : Register allocation)
@@ -225,32 +235,11 @@ La session 2 remplace la note d'examen final.
   14:00 -> 15:30 : TP 5 (fin) (E2, Gabriel Radanne : Smart register allocation)
   14:00 -> 15:30 : TP 5 (fin) (E1, Guillaume Bouchard : Smart register allocation)
   14:00 -> 15:30 : TP 5 (fin) (A2, Lionel Morel : Smart register allocation)
+
+Deadline TP5 mercredi 12/1 soir pour éviter les clashs avec les deadlines mif03 (7, 10, 11, 13, 14 janvier selon les groupes).
 ```
 
 # CI-DESSOUS, LE PLANNING DE L'ANNEE DERNIERE QUI SERA MIS À JOUR AU FUR ET À MESURE
-
-- :book: Cours 3, Typage : 17h30-19h
-    - [transparents typage](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_cours04_typing.pdf)
-    - [vidéo typage](https://youtu.be/2A-hQy_6YlE)
-    - chat sur [compil-2021](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2Fynpajp).
-    - Visio en direct à 18h15 sur [BBB (Compilation mif08)](https://classe-info.univ-lyon1.fr/moy-n6a-uip-gtj).
-
-- :100: QCM noté sur TOMUSS, à faire avant 23:59 le jour même (4/11)
-
-## Vendredi 13/11/2020 ou Mercredi 18/11/2020
-
-- :hammer: TP3, interprète MiniC : 14h-17h15 (même horaire pour le 13/11 et 18/11)
-    - 100% distanciel :
-        - Groupe A : [compil-groupe-a](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FtHfE7j) Laure Gonnord et Joris Picot
-        - Groupe B : [compil-groupe-b](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FqHW2MX) Nicolas Louvet et Matthieu Moy
-        - Groupe C : [compil-groupe-c](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FsuFXKk) Thierry Excoffier et Guillaume Bouchard
-        - Groupe D : [compil-groupe-d](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FkAWmMd) Lionel Morel et Élise Jeanneau
-        - Groupe E1 (le groupe E2 est décalé au 18/11, mais peut venir poser des questions le 13/11 quand même) : [compil-groupe-e](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FcnEQ9c) Guillaume Salagnac
-    - Le 18/11 :
-        - Groupe E2 (les autres étudiants peuvent en profiter pour passer poser des questions si le TP n'est pas fini): [compil-groupe-e](https://go.rocket.chat/invite?host=chat-info.univ-lyon1.fr&path=invite%2FcnEQ9c) Grégoire Pichon
-    - Énoncé : [TP3 frontend, évaluateur](https://compil-lyon.gitlabpages.inria.fr/mif08-20/tp3.pdf)
-    - Fichiers du TP3 : [MiniC/](MiniC/).
-    - **Date limite de rendu du TP3 (stricte, note 0 pour tout rendu en retard) : 4 décembre 2020, 23h59.**
 
 ## Mercredi 2/12/2020
 
