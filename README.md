@@ -155,7 +155,7 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
         - Groupe D1 : Nautibus TP13
         - Groupe D2 : Nautibus TP12
 
-- :book: Cours 4 : 14h-15h30
+- :book: Cours 4 : 15h45-17h15
     - génération de code 3 adresses + allocation naive, [transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/capmif_cours05_3ad_codegen.pdf), [vidéo](https://youtu.be/m2x7leFnCN4)
     - Représentations intermédiaires, [transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/capmif_cours06_irs.pdf), [vidéo 6a](https://youtu.be/dD9bRhLfykM), [vidéo 6b](https://youtu.be/Xico_JTK3XQ).
 
@@ -171,7 +171,7 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
         - Groupe D : Nautibus TD 10
     - Sujet : [TD3 génération de code]() TODO
 
-- :hammer: TP, 14h-17h15
+- :hammer: TP, 15h45-17h15
     - Salles :
         - Groupe A1 : Nautibus TP10
         - Groupe A2 : Nautibus TP11
