@@ -45,13 +45,6 @@ print_stat
     | PRINTLN_STRING OPAR expr CPAR SCOL      #printlnstringStat
     ;
 
-expr_l
-    : /* Nothing */     #exprListEmpty
-    | expr              #exprListBase
-    | expr COM expr_l   #exprList
-    ;
-
-
 expr
     : MINUS expr                           #unaryMinusExpr
     | NOT expr                             #notExpr
