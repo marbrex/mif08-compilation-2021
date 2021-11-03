@@ -117,7 +117,14 @@ class MiniCInterpretVisitor(MiniCVisitor):
                 return lval / rval
         elif ctx.myop.type == MiniCParser.MOD:
             # TODO : interpret modulo
-            raise NotImplementedError()
+            # raise NotImplementedError()
+            if rval == 0:
+                raise MiniCRuntimeError("Division by 0")
+            else:
+                acc = 0
+                while acc+rval <= lval:
+                    acc += rval
+                return lval - acc
         else:
             raise MiniCInternalError(
                 "Unknown multiplicative operator '%s'" % ctx.myop)
