@@ -24,7 +24,7 @@ You can select the files you want to test by using `make tests TEST_FILES='TP03/
 
 # Test design 
 
-During implementation of the functionalities, **many tests** have been created to test new features **step by step**. You can find both **positive and negative** custom tests in the 'tests/students' directory.
+During implementation of the functionalities, **many tests** have been created to test new features **step by step**. You can find both **positive and negative** custom tests in the 'tests/students' directory. `TP03/MiniCInterpretVisitor.py` covered by 100%.
 
 # Design choices
 
