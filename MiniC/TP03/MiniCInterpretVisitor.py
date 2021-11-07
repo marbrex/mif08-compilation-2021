@@ -36,13 +36,18 @@ class MiniCInterpretVisitor(MiniCVisitor):
             elif type_str == "bool":
                 default_value = False
             elif type_str == "string":
-                default_value == ""
+                default_value = ""
 
             self._memory.update({id_str:default_value})
             # print(self._memory.get(id_str))
 
     def visitIdList(self, ctx) -> List[str]:
-        raise NotImplementedError()
+        # raise NotImplementedError()
+        first_id = ctx.ID().getText()
+        id_list = self.visit(ctx.id_l())
+        id_list.append(first_id)
+        return id_list
+        
 
     def visitIdListBase(self, ctx) -> List[str]:
         return [ctx.ID().getText()]
@@ -63,7 +68,7 @@ class MiniCInterpretVisitor(MiniCVisitor):
 
     def visitIdAtom(self, ctx) -> MINIC_VALUE:
         # raise NotImplementedError()
-        return self._memory.get(ctx.ID().getText())
+        return self._memory[ctx.ID().getText()]
 
     def visitStringAtom(self, ctx) -> str:
         return ctx.getText()[1:-1]

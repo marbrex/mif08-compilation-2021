@@ -11,4 +11,5 @@ int main(){
 }
   
 // EXPECTED
+// EXITCODE 2
 // In function main: Line 6 col 2: invalid type for while condition: float

@@ -6,4 +6,5 @@ int main(){
 }
   
 // EXPECTED
+// EXITCODE 2
 // In function main: Line 4 col 14: Undefined variable n

@@ -12,4 +12,5 @@ int main(){
 }
   
 // EXPECTED
+// EXITCODE 2
 // In function main: Line 5 col 2: invalid type for if condition: integer

@@ -1,11 +1,11 @@
 #include "printlib.h"
 
 int main(){
-  int n;
-  n = 0%0;
+  int n1, n2, n3;
+  n2 = 2;
+  println_int(n2);
   return 0;
 }
   
 // EXPECTED
-// EXITCODE 1
-// Division by 0
+// 2
