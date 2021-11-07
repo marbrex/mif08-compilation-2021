@@ -18,10 +18,28 @@ class MiniCInterpretVisitor(MiniCVisitor):
 
     # visitors for variable declarations
 
+    # Reminder:
+    # 'self' this pointer, 'ctx' stands for context
+
     def visitVarDecl(self, ctx) -> None:
         # Initialise all variables in self._memory
-        type_str = ctx.typee().getText()
-        raise NotImplementedError()
+        # raise NotImplementedError()
+        id_list = self.visit(ctx.id_l())
+        for id_str in id_list:
+            type_str = ctx.typee().getText()
+            # print("id: " + id_str)
+            # print("type_str: " + type_str)
+            
+            default_value = 0
+            if type_str == "float":
+                default_value = 0.0
+            elif type_str == "bool":
+                default_value = False
+            elif type_str == "string":
+                default_value == ""
+
+            self._memory.update({id_str:default_value})
+            # print(self._memory.get(id_str))
 
     def visitIdList(self, ctx) -> List[str]:
         raise NotImplementedError()
@@ -44,7 +62,8 @@ class MiniCInterpretVisitor(MiniCVisitor):
         return ctx.getText() == "true"
 
     def visitIdAtom(self, ctx) -> MINIC_VALUE:
-        raise NotImplementedError()
+        # raise NotImplementedError()
+        return self._memory.get(ctx.ID().getText())
 
     def visitStringAtom(self, ctx) -> str:
         return ctx.getText()[1:-1]
@@ -118,6 +137,7 @@ class MiniCInterpretVisitor(MiniCVisitor):
         elif ctx.myop.type == MiniCParser.MOD:
             # TODO : interpret modulo
             # raise NotImplementedError()
+            # print("IN MODULO!")
             if rval == 0:
                 raise MiniCRuntimeError("Division by 0")
             else:
