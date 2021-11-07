@@ -193,7 +193,12 @@ class MiniCInterpretVisitor(MiniCVisitor):
             # print(else_block)
 
     def visitWhileStat(self, ctx) -> None:
-        raise NotImplementedError()
+        # raise NotImplementedError()
+        expr_val = self.visit(ctx.expr())
+        while expr_val:
+            stat_block = self.visit(ctx.stat_block())
+            expr_val = self.visit(ctx.expr())
+            # print(expr_val)
 
     # TOPLEVEL
     def visitProgRule(self, ctx) -> None:
