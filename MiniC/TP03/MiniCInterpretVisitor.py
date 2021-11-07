@@ -174,10 +174,23 @@ class MiniCInterpretVisitor(MiniCVisitor):
         print(val)
 
     def visitAssignStat(self, ctx) -> None:
-        raise NotImplementedError()
+        # raise NotImplementedError()
+        id_str = ctx.ID().getText()
+        expr_val = self.visit(ctx.expr())
+        self._memory.update({id_str:expr_val})
+        # print(id_str)
+        # print(expr_val)
 
     def visitIfStat(self, ctx) -> None:
-        raise NotImplementedError()
+        # raise NotImplementedError()
+        expr_val = self.visit(ctx.expr())
+        # print(expr_val)
+        if expr_val:
+            if_block = self.visit(ctx.stat_block(0))
+            # print(if_block)
+        elif ctx.ELSE() is not None:
+            else_block = self.visit(ctx.stat_block(1))
+            # print(else_block)
 
     def visitWhileStat(self, ctx) -> None:
         raise NotImplementedError()
