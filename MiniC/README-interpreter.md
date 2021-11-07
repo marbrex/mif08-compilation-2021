@@ -28,6 +28,8 @@ During implementation of the functionalities, **many tests** have been created t
 
 # Design choices
 
+In some places you could find commented `print()` statements, these have been used to explore and to verify values of the vraiables.
+
 Each functionality asked has been implemented and tested with care :)
 
 # Known bugs
