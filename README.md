@@ -121,7 +121,7 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
     - Fichiers du TP2 : [TP02/](TP02/).
     - **Date limite pour le rendu (noté) : mardi 12/10/2021, 23h59.**
 
-## Mercredi 13/10/2020
+## Mercredi 13/10/2021
 
 - :book: Cours 3, Typage : 14h-15h30
     - [transparents typage](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/capmif_cours04_typing.pdf)
@@ -163,7 +163,7 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
 
 ## Mercredi 10/11/2021
 
-- :pencil2: TD 3 : 15h45-17h15 :
+- :pencil2: TD 3 : 14h00-15h30 :
     - Salles :
         - Groupe A : Nautibus TD 1
         - Groupe B : Nautibus TD 2
