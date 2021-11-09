@@ -169,7 +169,7 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
         - Groupe B : Nautibus TD 2
         - Groupe C : Nautibus TD 3
         - Groupe D : Nautibus TD 10
-    - Sujet : [TD3 génération de code]() TODO
+    - Sujet : [TD3 génération de code](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/td3.pdf)
 
 - :hammer: TP, 15h45-17h15
     - Salles :
