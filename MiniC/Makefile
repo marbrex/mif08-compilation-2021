@@ -9,6 +9,10 @@ ifdef TEST_FILES
 export TEST_FILES
 endif
 
+ifdef SSA
+export ENABLE_SSA=1
+endif
+
 PYTEST_BASE_OPTS=-vv -rs --failed-first --cov="$(PWD)" --cov-report=term --cov-report=html
 
 ifndef ANTLR4
@@ -26,8 +30,8 @@ main-deps: MiniCLexer.py MiniCParser.py TP03/MiniCInterpretVisitor.py TP03/MiniC
 
 .PHONY: tests tests-interpret tests-codegen tests-regalloc clean clean-tests tar
 
-tests: tests-pyright tests-interpret
 
+tests: tests-pyright tests-interpret tests-codegen tests-regalloc
 
 tests-pyright: antlr
 	pyright .

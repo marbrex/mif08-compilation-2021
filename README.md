@@ -183,9 +183,9 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
         - Groupe D2 : Nautibus TP12
     - Transparents de présentation : [capmif_labs.pdf](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_labs.pdf)
     - Rappel : des VM pour vous dépanner en cas de problème sur machine perso : [VM.md](VM.md)
-    - Énoncé : [TP4 génération de code]() TODO
+    - Énoncé : [TP4 génération de code](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/tp4.pdf)
     - Fichiers du TP4 : [MiniC/TP04/](MiniC/TP04/).
-    - **Date limite pour le rendu (noté) : 17 décembre 2021, 23h59.** Si vous rendez après la deadline mais avant le 2 janvier 2022, 23h59, un malus d'un point est appliqué, puis un point de malus par jour de retard supplémentaire. Aucun TP ne sera accepté après le mardi 4 janvier 2022, 23h59.
+    - **Date limite pour le rendu (noté) : 17 décembre 2021, 23h59.** Si vous rendez après la deadline mais avant le 2 janvier 2022, 23h59, un malus d'un point sur 20 est appliqué, puis un point de malus par jour de retard supplémentaire. Aucun TP ne sera accepté après le mardi 4 janvier 2022, 23h59.
 
 ## Mercredi 1/12/2021
 
