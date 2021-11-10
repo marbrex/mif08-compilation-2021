@@ -121,7 +121,7 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
     - Fichiers du TP2 : [TP02/](TP02/).
     - **Date limite pour le rendu (noté) : mardi 12/10/2021, 23h59.**
 
-## Mercredi 13/10/2020
+## Mercredi 13/10/2021
 
 - :book: Cours 3, Typage : 14h-15h30
     - [transparents typage](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/capmif_cours04_typing.pdf)
@@ -163,13 +163,13 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
 
 ## Mercredi 10/11/2021
 
-- :pencil2: TD 3 : 15h45-17h15 :
+- :pencil2: TD 3 : 14h00-15h30 :
     - Salles :
         - Groupe A : Nautibus TD 1
         - Groupe B : Nautibus TD 2
         - Groupe C : Nautibus TD 3
         - Groupe D : Nautibus TD 10
-    - Sujet : [TD3 génération de code]() TODO
+    - Sujet : [TD3 génération de code](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/td3.pdf)
 
 - :hammer: TP, 15h45-17h15
     - Salles :
@@ -183,9 +183,9 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
         - Groupe D2 : Nautibus TP12
     - Transparents de présentation : [capmif_labs.pdf](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_labs.pdf)
     - Rappel : des VM pour vous dépanner en cas de problème sur machine perso : [VM.md](VM.md)
-    - Énoncé : [TP4 génération de code]() TODO
+    - Énoncé : [TP4 génération de code](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/tp4.pdf)
     - Fichiers du TP4 : [MiniC/TP04/](MiniC/TP04/).
-    - **Date limite pour le rendu (noté) : 17 décembre 2021, 23h59.** Si vous rendez après la deadline mais avant le 2 janvier 2022, 23h59, un malus d'un point est appliqué, puis un point de malus par jour de retard supplémentaire. Aucun TP ne sera accepté après le mardi 4 janvier 2022, 23h59.
+    - **Date limite pour le rendu (noté) : 17 décembre 2021, 23h59.** Si vous rendez après la deadline mais avant le 2 janvier 2022, 23h59, un malus d'un point sur 20 est appliqué, puis un point de malus par jour de retard supplémentaire. Aucun TP ne sera accepté après le mardi 4 janvier 2022, 23h59.
 
 ## Mercredi 1/12/2021
 
