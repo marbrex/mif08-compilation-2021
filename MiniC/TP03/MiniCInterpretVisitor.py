@@ -18,13 +18,36 @@ class MiniCInterpretVisitor(MiniCVisitor):
 
     # visitors for variable declarations
 
+    # Reminder:
+    # 'self' this pointer, 'ctx' stands for context
+
     def visitVarDecl(self, ctx) -> None:
         # Initialise all variables in self._memory
-        type_str = ctx.typee().getText()
-        raise NotImplementedError()
+        # raise NotImplementedError()
+        id_list = self.visit(ctx.id_l())
+        for id_str in id_list:
+            type_str = ctx.typee().getText()
+            # print("id: " + id_str)
+            # print("type_str: " + type_str)
+            
+            default_value = 0
+            if type_str == "float":
+                default_value = 0.0
+            elif type_str == "bool":
+                default_value = False
+            elif type_str == "string":
+                default_value = ""
+
+            self._memory.update({id_str:default_value})
+            # print(self._memory.get(id_str))
 
     def visitIdList(self, ctx) -> List[str]:
-        raise NotImplementedError()
+        # raise NotImplementedError()
+        first_id = ctx.ID().getText()
+        id_list = self.visit(ctx.id_l())
+        id_list.append(first_id)
+        return id_list
+        
 
     def visitIdListBase(self, ctx) -> List[str]:
         return [ctx.ID().getText()]
@@ -44,7 +67,8 @@ class MiniCInterpretVisitor(MiniCVisitor):
         return ctx.getText() == "true"
 
     def visitIdAtom(self, ctx) -> MINIC_VALUE:
-        raise NotImplementedError()
+        # raise NotImplementedError()
+        return self._memory[ctx.ID().getText()]
 
     def visitStringAtom(self, ctx) -> str:
         return ctx.getText()[1:-1]
@@ -117,7 +141,15 @@ class MiniCInterpretVisitor(MiniCVisitor):
                 return lval / rval
         elif ctx.myop.type == MiniCParser.MOD:
             # TODO : interpret modulo
-            raise NotImplementedError()
+            # raise NotImplementedError()
+            # print("IN MODULO!")
+            if rval == 0:
+                raise MiniCRuntimeError("Division by 0")
+            else:
+                acc = 0
+                while acc+rval <= lval:
+                    acc += rval
+                return lval - acc
         else:
             raise MiniCInternalError(
                 "Unknown multiplicative operator '%s'" % ctx.myop)
@@ -147,13 +179,31 @@ class MiniCInterpretVisitor(MiniCVisitor):
         print(val)
 
     def visitAssignStat(self, ctx) -> None:
-        raise NotImplementedError()
+        # raise NotImplementedError()
+        id_str = ctx.ID().getText()
+        expr_val = self.visit(ctx.expr())
+        self._memory.update({id_str:expr_val})
+        # print(id_str)
+        # print(expr_val)
 
     def visitIfStat(self, ctx) -> None:
-        raise NotImplementedError()
+        # raise NotImplementedError()
+        expr_val = self.visit(ctx.expr())
+        # print(expr_val)
+        if expr_val:
+            if_block = self.visit(ctx.stat_block(0))
+            # print(if_block)
+        elif ctx.ELSE() is not None:
+            else_block = self.visit(ctx.stat_block(1))
+            # print(else_block)
 
     def visitWhileStat(self, ctx) -> None:
-        raise NotImplementedError()
+        # raise NotImplementedError()
+        expr_val = self.visit(ctx.expr())
+        while expr_val:
+            stat_block = self.visit(ctx.stat_block())
+            expr_val = self.visit(ctx.expr())
+            # print(expr_val)
 
     # TOPLEVEL
     def visitProgRule(self, ctx) -> None:
