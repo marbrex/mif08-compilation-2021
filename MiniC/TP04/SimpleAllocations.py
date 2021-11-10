@@ -7,10 +7,10 @@ class Allocator():
     def __init__(self, function):
         self._function_code = function
 
-    def prepare(self):
+    def prepare(self):  # pragma: nocover
         pass
 
-    def rewriteCode(self, listcode):
+    def rewriteCode(self, listcode):  # pragma: nocover
         pass
 
     def run(self):
