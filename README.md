@@ -30,10 +30,10 @@ L'organisation de l'UE en « mode COVID » est la suivante :
 
 ## Intervenants
 
-* Groupe A : Matthieu Moy (+ Guillaume Bouchard pour les TPs)
-* Groupe B : Elise Jeanneau (+ Gabriel Radanne pour les TPs)
-* Groupe C : Gregoire Pichon (+ Nicolas Louvet pour les TPs)
-* Groupe D : Joris Picot (+ Hugo Thievenaz pour les TPs)
+* Groupe A : Matthieu Moy (+ Guillaume Bouchard pour les TPs groupe A2)
+* Groupe B : Elise Jeanneau (+ Gabriel Radanne pour les TPs groupe B2)
+* Groupe C : Gregoire Pichon (+ Nicolas Louvet pour les TPs groupe C2)
+* Groupe D : Joris Picot (+ Hugo Thievenaz pour les TPs groupe D2)
 
 ## Vidéos des CM
 
