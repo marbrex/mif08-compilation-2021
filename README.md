@@ -191,6 +191,15 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
 
 - :hammer: TP 4 (suite), 14h-17h15 : cf. ci-dessus pour les supports et les salles (mêmes que le 10/11)
 
+## Mercredi 8/12/2021
+
+- :book: Cours 5 : 14h-15h30, allocation de registres
+    - Register allocation + data-flow analyses : [transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/capmif_cours07_regalloc.pdf), [vidéo première partie](https://youtu.be/9902mMgDIK8), [vidéo deuxième partie](https://youtu.be/LknSDccweFw).
+    - :100: QCM noté sur TOMUSS, à faire avant dimanche 12/12/2021, 23:59.
+
+- :pencil2: 15h45-17h15 :
+    - Énoncé : [TD4 liveness](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/td4.pdf)
+
 ## Pondération des notes (indicative pour l'instant sauf l'examen final qui sera forcément 50%)
   - QCM : 10% (2% chacun)
   - TP2 parsing et évaluation d'expression : 5%
@@ -246,21 +255,10 @@ Deadline TP4 juste avant les vacances de noel
 Deadline TP5 mercredi 12/1 soir pour éviter les clashs avec les deadlines mif03 (7, 10, 11, 13, 14 janvier selon les groupes).
 ```
 
+<!-- 
 # CI-DESSOUS, LE PLANNING DE L'ANNEE DERNIERE QUI SERA MIS À JOUR AU FUR ET À MESURE
 
-## Jeudi 10/12/2020
-
-- :hammer: TP, 14h-15h30 : fin du TP 4 (cf. ci-dessus pour les supports et liens chat-info).
-
-- :book: Cours 5, allocation de registres
-    - Register allocation + data-flow analyses : [transparents](https://compil-lyon.gitlabpages.inria.fr/mif08-20/capmif_cours07_regalloc.pdf), [vidéo première partie](https://youtu.be/9902mMgDIK8), [vidéo deuxième partie](https://youtu.be/LknSDccweFw).
-
-- :100: QCM noté sur TOMUSS, à faire avant 23:59 le jour même (10/12)
-
 ## Mercredi 6/01/2021
-<!-- 
-- :mag_right: Contrôle continu (tp) (20 min de composition) une grammaire
-    ANTLR -->
 
 Toujours les mêmes groupes et canaux sur chat-info, cf. ci-dessus.
 
@@ -279,23 +277,6 @@ Toujours les mêmes groupes et canaux sur chat-info, cf. ci-dessus.
 
 - :hammer: 15h45-17h15 : TP5, suite
     - Même sujet et organisation que la semaine d'avant en TP.
-<!-- 
-### Rendus Tomuss et feedback
-
-- CC de cours : la note arrivera fin de la semaine.
-
-- CC de tp noté : rendu mercredi 15/01 à 14h30. La correction
-arrivera avant la fin de la semaine.
-
-- Rendu de l'évaluateur juste après la démo le vendredi 17/01. Une
-note "automatique" vous sera rendue durant le week-end.
-
-- Tps de génération de code directe: rendu le mardi 21/01 à 18h - une
-correction partielle sera fournie à la même heure. 
-
-- Dernier TP : rendu le dimanche 26 à 23h59.
-
-- Les deux dernières notes de TP vous seront fournies après l'examen. -->
 
 ## Annales et consignes pour l'examen
 
@@ -312,3 +293,4 @@ correction partielle sera fournie à la même heure.
 * Examen de session 1 :
     - Pour les étudiants bénéficiant d'un tiers-temps : 8h-10h, salle Nautibus C2.
     - Pour les étudiants ne bénéficiant pas de tiers-temps : 8h15-9h45, Amphis Déambu (place exacte sur TOMUSS)
+-->
