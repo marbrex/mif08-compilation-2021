@@ -199,6 +199,11 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
 
 - :pencil2: 15h45-17h15 :
     - Énoncé : [TD4 liveness](https://compil-lyon.gitlabpages.inria.fr/mif08-files-2021/td4.pdf)
+    - Salles :
+        - Groupe A : Nautibus TD 1
+        - Groupe B : Nautibus TD 2
+        - Groupe C : Nautibus TD 3
+        - Groupe D : Nautibus TD 10
 
 ## Pondération des notes (indicative pour l'instant sauf l'examen final qui sera forcément 50%)
   - QCM : 10% (2% chacun)
