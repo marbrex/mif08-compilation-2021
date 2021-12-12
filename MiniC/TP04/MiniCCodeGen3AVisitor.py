@@ -93,13 +93,37 @@ class MiniCCodeGen3AVisitor(MiniCVisitor):
         return self.visit(ctx.atom())
 
     def visitAdditiveExpr(self, ctx) -> Operands.Temporary:
-        raise NotImplementedError() # TODO (Exercise 2)
+        # raise NotImplementedError() # TODO (Exercise 2)
+        # Here ctx.expr() returns an Array with 2 expressions
+        exprs = ctx.expr()
+        # print("visitAdditiveExpr: ")
+        # print(exprs)
+        temp_left = self.visit(exprs[0])
+        temp_right = self.visit(exprs[1])
+        temp_dest = self._current_function.new_tmp()
+        # print(temp_left.get_alloced_loc()) # returns a String of form "temp_{n}"
+        # print(temp_right.get_alloced_loc())
+        if ctx.myop.type == MiniCParser.PLUS:
+            # print("pluuus")
+            # print(type(temp_left))
+            # print(type(temp_right))
+            self._current_function.add_instruction_ADD(temp_dest, temp_left, temp_right)
+        elif ctx.myop.type == MiniCParser.MINUS:
+            # print("minuuus")
+            # print(type(temp_left))
+            # print(type(temp_right))
+            self._current_function.add_instruction_SUB(temp_dest, temp_left, temp_right)
+        return temp_dest
 
     def visitOrExpr(self, ctx) -> Operands.Temporary:
         raise NotImplementedError() # TODO (Exercise 2)
+        # print("visitOrExpr: ")
+        # print(ctx.expr)
 
     def visitAndExpr(self, ctx) -> Operands.Temporary:
         raise NotImplementedError() # TODO (Exercise 2)
+        # print("visitAndExpr: ")
+        # print(ctx.expr)
 
     def visitEqualityExpr(self, ctx) -> Operands.Temporary:
         return self.visitRelationalExpr(ctx)
