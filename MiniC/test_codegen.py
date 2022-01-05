@@ -230,7 +230,7 @@ class TestCodeGen(TestExpectPragmas):
             # GCC is more permissive than us, so trying to compile an
             # incorrect program would bring us no information (it may
             # compile, or fail with a different message...)
-            pytest.skip("Not testing the expected value for tests expecting exitcode==1")
+            pytest.skip("Not testing the expected value for tests expecting exitcode!=0")
         gcc_result = self.run_with_gcc(filename, expect)
         self.assert_equal(gcc_result, expect)
 
