@@ -7,15 +7,11 @@ class Allocator():
     def __init__(self, function):
         self._function_code = function
 
-    def prepare(self):  # pragma: nocover
+    def prepare(self):  # pragma: no cover
         pass
 
-    def rewriteCode(self, listcode):  # pragma: nocover
+    def rewriteCode(self, listcode):  # pragma: no cover
         pass
-
-    def run(self):
-        self.prepare()
-        self.rewriteCode(self._function_code)
 
 
 class NaiveAllocator(Allocator):
@@ -47,8 +43,9 @@ class NaiveAllocator(Allocator):
 def replace_reg(old_i):
     """Replace Temporary operands with
     the corresponding allocated register."""
-    ins, old_args = old_i.unfold()
-    args = []
+    # Here "old_i" is of type "Instru3A" 
+    ins, old_args = old_i.unfold() # (instruction name, list of arguments)
+    args = [] # new list of arguments
     for arg in old_args:
         if isinstance(arg, Temporary):
             arg = arg.get_alloced_loc()
@@ -83,16 +80,26 @@ class AllInMemAllocator(Allocator):
 
 def replace_mem(old_i):
     """Replace Temporary operands with the corresponding allocated
-    memory location. FP points to the stack"""
+    memory location. FP points to the stack."""
+    # Here "old_i" is of type "Instru3A" 
     before = []
     after = []
-    ins, old_args = old_i.unfold()
-    args = []
+    ins, old_args = old_i.unfold() # (instruction name, list of arguments)
+    args = [] # new list of arguments
     numreg = 1
     # TODO (Exercise 7): compute before,after,args.
     # TODO (Exercise 7): iterate over old_args, check which argument
     # TODO (Exercise 7): is a temporary (e.g. isinstance(..., Temporary)),
     # TODO (Exercise 7): and if so, generate ld/sd accordingly. Replace the
     # TODO (Exercise 7): temporary with S[1], S[2] or S[3] physical registers.
+    for arg in old_args:
+        if isinstance(arg, Temporary):
+            arg = arg.get_alloced_loc()
+            before.append(Instru3A('ld', S[numreg], arg)) # S : constant in Operands.py
+            after.append(Instru3A('sd', S[numreg], arg))
+            args.append(S[numreg])
+            numreg = numreg + 1
+        else:
+            args.append(arg)
     i = Instru3A(ins, args=args)
     return before + [i] + after

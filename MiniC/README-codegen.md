@@ -3,11 +3,11 @@ LAB4 (simple code generation), MIF08 / CAP 2021-22
 
 # Authors
 
-YOUR NAME HERE
+Eldar Kasmamytov (p1712650)
 
 # Contents
 
-TODO for STUDENTS : Say a bit about the code infrastructure ...
+In this lab, we generate low-level RISCV instructions (3-address assembly code) for the MiniC language from the source code.
 
 # Howto
 
@@ -19,15 +19,22 @@ TODO for STUDENTS : Say a bit about the code infrastructure ...
 
 # Test design 
 
-TODO: explain your tests
+Tests inherit the same structure of the previous labs.
+But in addition, a new annotation that lets to skip tests is used in this lab.
+
+- 100% of code cover in MiniCCodeGen3AVisitor.py.
+- Almost fully covered SimpleAllocations.py. The only part that is not being tested is "AllocationError" exception
+in the "AllInMemAllocator".
 
 # Design choices
 
-TODO: explain your choices
+Log prints are still in the code, but only shown if the "debug" option is specified on program execution.
+
+Each functionality asked has been implemented and tested with care :)
 
 # Known bugs
 
-TODO: Bugs and limitations.
+There are no known bugs.
 
 # Checklists
 
@@ -36,30 +43,30 @@ and *tested* with appropriate test cases.
 
 ## Code generation
 
-- [ ] Number Atom 
-- [ ] Boolean Atom
-- [ ] Id Atom 
-- [ ] Additive expression
-- [ ] Multiplicative expr
-- [ ] UnaryMinus expr
-- [ ] Or expression
-- [ ] And expression
-- [ ] Equality expression
-- [ ] Relational expression (! many cases -> many tests)
-- [ ] Not expression
+- [X] Number Atom 
+- [X] Boolean Atom
+- [X] Id Atom 
+- [X] Additive expression
+- [X] Multiplicative expr
+- [X] UnaryMinus expr
+- [X] Or expression
+- [X] And expression
+- [X] Equality expression
+- [X] Relational expression (! many cases -> many tests)
+- [X] Not expression
 
 ## Statements
 
-- [ ] Prog, assignements
-- [ ] While
-- [ ] Cond Block
-- [ ] If
-- [ ] Nested ifs
-- [ ] Nested whiles
+- [X] Prog, assignements
+- [X] While
+- [X] Cond Block
+- [X] If
+- [X] Nested ifs
+- [X] Nested whiles
 
 ## Allocation
 
-- [ ] Naive allocation
-- [ ] All in memory allocation
-- [ ] Massive tests of memory allocation
+- [X] Naive allocation
+- [X] All in memory allocation
+- [X] Massive tests of memory allocation
 
