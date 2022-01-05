@@ -3,7 +3,7 @@ LAB5 (smart code generation), MIF08 / CAP 2021-22
 
 # Authors
 
-YOUR NAME HERE
+Eldar Kasmamytov (p1712650)
 
 # Contents
 

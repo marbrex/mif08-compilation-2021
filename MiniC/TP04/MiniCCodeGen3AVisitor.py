@@ -274,7 +274,8 @@ class MiniCCodeGen3AVisitor(MiniCVisitor):
         if_false_label = self._current_function.new_label("if_false")
         end_if_label = self._current_function.new_label("end_if")
         # raise NotImplementedError() # TODO (Exercise 5)
-        self._current_function.add_instruction_cond_JUMP(if_false_label, temp_expr, Condition(MiniCParser.EQ), 0)
+        if has_false_block:
+            self._current_function.add_instruction_cond_JUMP(if_false_label, temp_expr, Condition(MiniCParser.EQ), 0)
         # EXECUTE IF TRUE BLOCK HERE
         self.visit(true_block)
         self._current_function.add_instruction_JUMP(end_if_label)

@@ -6,15 +6,15 @@ int main() {
     int y;
     x = 42;
     y = 2;
-    println_int(x / y);
-    println_int(y / x);
-    println_int(x * y);
-    println_int(y * (x / 3));
+    println_int(x / (-y));
+    println_int((-y) / x);
+    println_int((-x) * y);
+    println_int(y * -(x / 3));
     return 0;
 }
 
 // EXPECTED
-// 21
+// -21
 // 0
-// 84
-// 28
+// -84
+// -28

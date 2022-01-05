@@ -4,11 +4,17 @@ int main() {
     
     int x;
     int y;
-    x = 42;
-    y = 16;
+    x = 4;
+    y = 3;
     println_int(x % y);
+    println_int((-x) % y);
+    println_int(x % (-y));
+    println_int((-x) % (-y));
     return 0;
 }
 
 // EXPECTED
-// 10
+// 1
+// -1
+// 1
+// -1
