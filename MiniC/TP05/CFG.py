@@ -146,7 +146,15 @@ class CFG:
         leaders: List[int] = [0]
         # TODO fill leaders
         # The final "ret" is also a form of jump
-        leaders.append(len(instructions))
+        for indx, instr in enumerate(instructions):
+            if instr.is_label():
+                leaders.append(indx)
+            elif (instr.is_jump() or instr.is_cond_jump()) and indx < len(instructions)-1:
+                leaders.append(indx+1)
+        leaders.append(len(instructions)) # important, won't work otherwise
+        print("Leaders: ")
+        for l in leaders:
+            print(l)
         return leaders
 
     """Extract the blocks from the linear code and add them to the CFG"""
