@@ -1,8 +1,7 @@
-from typing import List, Tuple, Set, Any
-from TP04.Operands import Operand, Temporary, S, Register, GP_REGS, FP
+from TP04.Operands import Temporary, S, Register, GP_REGS, FP
 from TP04.Instruction3A import Instru3A
 from TP04.SimpleAllocations import Allocator
-from .LibGraphes import Graph, DiGraph  # For Graph coloring utility functions
+from .LibGraphes import Graph  # For Graph coloring utility functions
 from Errors import MiniCInternalError
 
 
@@ -114,48 +113,3 @@ class SmartAllocator(Allocator):
         raise NotImplementedError("Allocation based on graph coloring (lab5)")
         self._function_code._pool.set_temp_allocation(alloc_dict)
         self._function_code._stacksize = self._function_code.get_offset()
-
-
-def generate_smart_move(dest: Operand, src: Operand) -> List[Instru3A]:
-    """Generate a list of move, store and load instructions, depending if the
-    operands are registers or memory locations"""
-    instr = []
-    return instr
-
-
-def sequentialize_moves(tmp: Register,
-                        parallel_moves: Set[Tuple[Any, Any]]) -> List[Tuple[Any, Any]]:
-    """Take a set of parallel moves represented as (destination, source) pairs,
-    and return a list of sequential moves which respect the cycles.
-    Use the specified tmp for cycles.
-    Returns a list of (destination, source) pairs"""
-    move_graph = DiGraph()
-    for dest, src in parallel_moves:
-        move_graph.add_edge((src, dest))
-    moves = []
-    # First iteratively remove all the edges without successors.
-    vars_without_successor = {src
-                              for src, dests in move_graph.neighbourhoods()
-                              if len(dests) == 0}
-    while vars_without_successor:
-        var = vars_without_successor.pop()
-        for src, dests in move_graph.neighbourhoods():
-            if var in dests:
-                moves.append((var, src))
-                dests.remove(var)
-                if len(dests) == 0:
-                    vars_without_successor.add(src)
-        move_graph.delete_vertex(var)
-    # Then handle the cycles.
-    cycles = move_graph.connex_components()
-    for cycle in cycles:
-        if len(cycle) == 1:
-            v = cycle.pop()
-            moves.append((v, v))
-        else:
-            previous = tmp
-            for v in reversed(cycle):
-                moves.append((previous, v))
-                previous = v
-            moves.append((previous, tmp))
-    return moves
