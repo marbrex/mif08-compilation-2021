@@ -231,7 +231,7 @@ Si vous n'arrivez pas à installer les outils sur vos machines, vous pourrez tra
 
 ## Mercredi 12/01/2022
 
-- :hammer: 15h45-17h15 : TP5, suite
+- :hammer: 14h-15h30 : TP5, suite
     - Même sujet et organisation que la semaine d'avant en TP.
 
 ## Mercredi 19/01/2022
