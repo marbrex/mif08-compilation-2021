@@ -89,13 +89,35 @@ class Block:
             i += 1
 
     def set_gen_kill(self):
+        print("\nNEW BLOCK")
         gen = set()
         kill = set()
         for i in self.get_instructions():
             # Reminder: '|' is set union, '-' is subtraction.
-            raise NotImplementedError()
+            # KILLS: Instruction.defined() returns a list of variables (temporaries)
+            # that are assigned (left hand side of an assignment).
+            # GENS: Instruction.used() returns a list of variables (temporaries)
+            # that are used before any assignment.
+            defined = set(i.defined())
+            used = set(i.used())
+
+            # print(i)
+            # print("Defined: ", defined)
+            # print("Used: ", used)
+
+            kill = kill | defined
+            gen = gen | used - kill
+
+            # print("KILLS: ", kill)
+            # print("GENS: ", gen)
+
+            # print('\n')
+            # raise NotImplementedError()
         self._gen = gen
         self._kill = kill
+
+        print("FINAL KILLS: ", self._kill)
+        print("FINAL GENS: ", self._gen)
 
     def print_gen_kill(self, i):  # pragma: no cover
         print("block " + str(self._label), ":", i)

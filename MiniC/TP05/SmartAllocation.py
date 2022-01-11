@@ -48,12 +48,16 @@ class SmartAllocator(Allocator):
         if self._debug_graphs:
             self._function_code.print_dot(self._basename + ".dot", view=True)
             print("CFG generated in " + self._basename + ".dot.pdf")
+
+        # liveness analysis
+        # set the following sets for each block:
+        # GEN and KILL (CFG.set_gen_kill()),
+        # IN and OUT (LivenessDataFlow.run_dataflow_analysis())
+        self._liveness.run()
+
         # TODO (lab5): Move the raise statement below down as you progress
         # TODO (lab5): in the lab. It must be removed from the final version.
         raise NotImplementedError("run: stopping here for now")
-
-        # liveness analysis
-        self._liveness.run()
 
         # conflict graph
         self.build_interference_graph()
