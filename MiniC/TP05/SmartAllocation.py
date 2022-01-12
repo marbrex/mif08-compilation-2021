@@ -11,11 +11,10 @@ def replace_smart(old_i):
     before = []
     after = []
     ins, old_args = old_i.unfold()
-    print("old_args:", old_args)
     args = []
     numreg = 1
-    # TODO (lab5): compute before,after,args. This is similar to what
-    # TODO (lab5): replace_mem and replace_reg from TP04 do.
+    # (lab5): compute before,after,args. This is similar to what
+    # (lab5): replace_mem and replace_reg from TP04 do.
     # and now return the new list!
     for arg in old_args:
         if isinstance(arg, Temporary):
@@ -23,7 +22,7 @@ def replace_smart(old_i):
             if isinstance(arg, Offset):
                 # need to check for is_read_only(), 'cause arguments
                 # are not always of the form (source, destination)
-                # both may be read-only
+                # both may be read-only (for ex: branch, jump..)
                 if old_i.is_read_only():
                     before.append(Instru3A('ld', S[numreg], arg))
                 else:
@@ -66,7 +65,7 @@ class SmartAllocator(Allocator):
         """
         # prints the CFG as a dot file
         if self._debug_graphs:
-            self._function_code.print_dot(self._basename + ".dot", view=True)
+            self._function_code.print_dot(self._basename + ".dot", view=False)
             print("CFG generated in " + self._basename + ".dot.pdf")
 
         # liveness analysis
@@ -78,9 +77,9 @@ class SmartAllocator(Allocator):
         # conflict graph
         self.build_interference_graph()
 
-        if self._debug_graphs:
-            print("printing the conflict graph")
-            self._igraph.print_dot(self._basename + "_conflicts.dot")
+        # if self._debug_graphs:
+        #     print("printing the conflict graph")
+        #     self._igraph.print_dot(self._basename + "_conflicts.dot")
 
         # Smart Alloc via graph coloring
         self.smart_alloc(self._basename + "_colored.dot")
@@ -101,7 +100,6 @@ class SmartAllocator(Allocator):
             elif t2 in liveout and t1 in instr.defined():
                 return True
         return False
-        # raise NotImplementedError("interfere() function (lab5)") # TODO
 
     def build_interference_graph(self):
         """Build the interference graph. Nodes of the graph are temporaries,
@@ -135,7 +133,7 @@ class SmartAllocator(Allocator):
         # specifying where a given Temporary should be allocated:
         alloc_dict = {}
 
-        # TODO (lab5): color the graph and get back the coloring (see
+        # (lab5): color the graph and get back the coloring (see
         # Graph.color() in LibGraphes.py). Then, construct a dictionary Temporary ->
         # Register or Offset. Our version is less than 15 lines
         # including debug log. You can get all temporaries in
@@ -145,15 +143,10 @@ class SmartAllocator(Allocator):
         nb_colors_needed = len(set(coloring.values()))
         regs = list(GP_REGS)
         nb_regs = len(GP_REGS)
-        print("coloring:", coloring)
-        print("nb_colors_needed:", nb_colors_needed)
 
-        if self._debug_graphs:
-            print("printing the colored conflict graph")
-            self._igraph.print_dot(self._basename + "_conflicts_colored.dot", coloring)
-
-        print("regs:", regs)
-        print("nb_regs:", nb_regs)
+        # if self._debug_graphs:
+        #     print("printing the colored conflict graph")
+        #     self._igraph.print_dot(self._basename + "_conflicts_colored.dot", coloring)
 
         # a list that contains:
         # as index: color (or number of neighbours)
@@ -167,14 +160,9 @@ class SmartAllocator(Allocator):
                 for temp in temps_same_color[i]:
                     alloc_dict[temp] = curr_reg
             else:
+                # on a plus de registres => offset
                 for temp in temps_same_color[i]:
                     alloc_dict[temp] = self._function_code.new_offset(FP)
-                # on a plus de registres => offset
 
-        print("temps_same_color:", temps_same_color)
-        print("alloc_dict:", alloc_dict)
-        print("regs after:", regs)
-
-        # raise NotImplementedError("Allocation based on graph coloring (lab5)")
         self._function_code._pool.set_temp_allocation(alloc_dict)
         self._function_code._stacksize = self._function_code.get_offset()

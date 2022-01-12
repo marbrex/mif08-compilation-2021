@@ -89,7 +89,6 @@ class Block:
             i += 1
 
     def set_gen_kill(self):
-        print("\nNEW BLOCK")
         gen = set()
         kill = set()
         for i in self.get_instructions():
@@ -101,23 +100,11 @@ class Block:
             defined = set(i.defined())
             used = set(i.used())
 
-            # print(i)
-            # print("Defined: ", defined)
-            # print("Used: ", used)
-
             kill = kill | defined
             gen = gen | used - kill
 
-            # print("KILLS: ", kill)
-            # print("GENS: ", gen)
-
-            # print('\n')
-            # raise NotImplementedError()
         self._gen = gen
         self._kill = kill
-
-        print("FINAL KILLS: ", self._kill)
-        print("FINAL GENS: ", self._gen)
 
     def print_gen_kill(self, i):  # pragma: no cover
         print("block " + str(self._label), ":", i)
@@ -166,7 +153,7 @@ class CFG:
     """
     def _find_leaders(self, instructions: List[Instruction]):
         leaders: List[int] = [0]
-        # TODO fill leaders
+        # fill leaders
         # The final "ret" is also a form of jump
         for indx, instr in enumerate(instructions):
             if instr.is_label():
@@ -174,9 +161,6 @@ class CFG:
             elif (instr.is_jump() or instr.is_cond_jump()) and indx < len(instructions)-1:
                 leaders.append(indx+1)
         leaders.append(len(instructions)) # important, won't work otherwise
-        print("Leaders: ")
-        for l in leaders:
-            print(l)
         return leaders
 
     """Extract the blocks from the linear code and add them to the CFG"""
