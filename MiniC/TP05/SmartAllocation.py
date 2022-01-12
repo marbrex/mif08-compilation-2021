@@ -79,14 +79,14 @@ class SmartAllocator(Allocator):
     def interfere(self, t1, t2):
         """Interfere function: True if t1 and t2 are in conflit anywhere in
         the function."""
-        b_exists : bool = False
         for instr, liveout in self._liveness._liveout.items():
-            if set([t1,t2]).issubset(liveout) or \
-               (t1 in liveout and t2 in instr.defined()) or \
-               (t2 in liveout and t1 in instr.defined()):
-                b_exists = True
-                break
-        return b_exists
+            if set([t1,t2]).issubset(liveout):
+                return True
+            elif t1 in liveout and t2 in instr.defined():
+                return True
+            elif t2 in liveout and t1 in instr.defined():
+                return True
+        return False
         # raise NotImplementedError("interfere() function (lab5)") # TODO
 
     def build_interference_graph(self):
