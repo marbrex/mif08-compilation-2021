@@ -55,12 +55,14 @@ class SmartAllocator(Allocator):
         # IN and OUT (LivenessDataFlow.run_dataflow_analysis())
         self._liveness.run()
 
+        # conflict graph
+        self.build_interference_graph()
+
+        self._igraph.print_dot()
+
         # TODO (lab5): Move the raise statement below down as you progress
         # TODO (lab5): in the lab. It must be removed from the final version.
         raise NotImplementedError("run: stopping here for now")
-
-        # conflict graph
-        self.build_interference_graph()
 
         if self._debug_graphs:
             print("printing the conflict graph")
@@ -77,7 +79,15 @@ class SmartAllocator(Allocator):
     def interfere(self, t1, t2):
         """Interfere function: True if t1 and t2 are in conflit anywhere in
         the function."""
-        raise NotImplementedError("interfere() function (lab5)") # TODO
+        b_exists : bool = False
+        for instr, liveout in self._liveness._liveout.items():
+            if set([t1,t2]).issubset(liveout) or \
+               (t1 in liveout and t2 in instr.defined()) or \
+               (t2 in liveout and t1 in instr.defined()):
+                b_exists = True
+                break
+        return b_exists
+        # raise NotImplementedError("interfere() function (lab5)") # TODO
 
     def build_interference_graph(self):
         """Build the interference graph. Nodes of the graph are temporaries,
