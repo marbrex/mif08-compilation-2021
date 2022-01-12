@@ -6,11 +6,12 @@ CAP, SSA Intro, Elimination and Optimisations
 Classes for a SSA operations.
 """
 
-from typing import List, Dict, Set, Any
+from typing import List, Dict, Set, Any, Tuple
 from graphviz import Digraph
+from TP05.LibGraphes import DiGraph
 from TP05.CFG import (Block, CFG)
 from TP04.Operands import (
-    Temporary, DataLocation,
+    Operand, Register, Temporary, DataLocation,
     Renamer)
 from TP04.Instruction3A import (Instruction, Instru3A, Label)
 
@@ -233,3 +234,48 @@ def exit_ssa(function: CFG):
                 # and update edges and jumps accordingly
             for phi in phis:
                 b._listIns.remove(phi)
+
+
+def generate_smart_move(dest: Operand, src: Operand) -> List[Instru3A]:
+    """Generate a list of move, store and load instructions, depending if the
+    operands are registers or memory locations"""
+    instr = []
+    return instr
+
+
+def sequentialize_moves(tmp: Register,
+                        parallel_moves: Set[Tuple[Any, Any]]) -> List[Tuple[Any, Any]]:
+    """Take a set of parallel moves represented as (destination, source) pairs,
+    and return a list of sequential moves which respect the cycles.
+    Use the specified tmp for cycles.
+    Returns a list of (destination, source) pairs"""
+    move_graph = DiGraph()
+    for dest, src in parallel_moves:
+        move_graph.add_edge((src, dest))
+    moves = []
+    # First iteratively remove all the edges without successors.
+    vars_without_successor = {src
+                              for src, dests in move_graph.neighbourhoods()
+                              if len(dests) == 0}
+    while vars_without_successor:
+        var = vars_without_successor.pop()
+        for src, dests in move_graph.neighbourhoods():
+            if var in dests:
+                moves.append((var, src))
+                dests.remove(var)
+                if len(dests) == 0:
+                    vars_without_successor.add(src)
+        move_graph.delete_vertex(var)
+    # Then handle the cycles.
+    cycles = move_graph.connex_components()
+    for cycle in cycles:
+        if len(cycle) == 1:
+            v = cycle.pop()
+            moves.append((v, v))
+        else:
+            previous = tmp
+            for v in reversed(cycle):
+                moves.append((previous, v))
+                previous = v
+            moves.append((previous, tmp))
+    return moves

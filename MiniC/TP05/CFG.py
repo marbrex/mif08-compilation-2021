@@ -93,7 +93,16 @@ class Block:
         kill = set()
         for i in self.get_instructions():
             # Reminder: '|' is set union, '-' is subtraction.
-            raise NotImplementedError()
+            # KILLS: Instruction.defined() returns a list of variables (temporaries)
+            # that are assigned (left hand side of an assignment).
+            # GENS: Instruction.used() returns a list of variables (temporaries)
+            # that are used before any assignment.
+            defined = set(i.defined())
+            used = set(i.used())
+
+            kill = kill | defined
+            gen = gen | used - kill
+
         self._gen = gen
         self._kill = kill
 
@@ -144,9 +153,14 @@ class CFG:
     """
     def _find_leaders(self, instructions: List[Instruction]):
         leaders: List[int] = [0]
-        # TODO fill leaders
+        # fill leaders
         # The final "ret" is also a form of jump
-        leaders.append(len(instructions))
+        for indx, instr in enumerate(instructions):
+            if instr.is_label():
+                leaders.append(indx)
+            elif (instr.is_jump() or instr.is_cond_jump()) and indx < len(instructions)-1:
+                leaders.append(indx+1)
+        leaders.append(len(instructions)) # important, won't work otherwise
         return leaders
 
     """Extract the blocks from the linear code and add them to the CFG"""
