@@ -85,6 +85,7 @@ def replace_mem(old_i):
     before = []
     after = []
     ins, old_args = old_i.unfold() # (instruction name, list of arguments)
+    print(old_args)
     args = [] # new list of arguments
     numreg = 1
     # TODO (Exercise 7): compute before,after,args.
@@ -95,8 +96,14 @@ def replace_mem(old_i):
     for arg in old_args:
         if isinstance(arg, Temporary):
             arg = arg.get_alloced_loc()
-            before.append(Instru3A('ld', S[numreg], arg)) # S : constant in Operands.py
-            after.append(Instru3A('sd', S[numreg], arg))
+            # need to check for is_read_only(), 'cause arguments
+            # are not always of the form (source, destination)
+            # both may be read-only
+            if old_i.is_read_only():
+                before.append(Instru3A('ld', S[numreg], arg))
+            else:
+                before.append(Instru3A('ld', S[numreg], arg)) # S : constant in Operands.py
+                after.append(Instru3A('sd', S[numreg], arg))
             args.append(S[numreg])
             numreg = numreg + 1
         else:
